@@ -68,7 +68,6 @@ jobs:
         env: 
           MACOS_PFX_PASSWORD: ${{ secrets.MACOS_PFX_PASSWORD }}
           WINDOWS_PFX_PASSWORD: ${{ secrets.WINDOWS_PFX_PASSWORD }}
-          JULIA_NUM_PRECOMPILE_TASKS: 2
         run: |
           ${{ matrix.xvfb && 'xvfb-run -s ''-screen 0 1024x768x24''' || '' }} julia --project=meta meta/build.jl --target-platform=${{ matrix.os }} --target-arch=${{ matrix.arch }} --build-dir=build
       
