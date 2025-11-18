@@ -1,9 +1,10 @@
-name = "JuBox"
-version = "25.11.11"
+name = "Jumbo"
+version = "25.11.18"
 authors = ["Janis Erdmanis <janiserdmanis@protonmail.ch>"]
 
 [deps]
 AlgebraOfGraphics = "cbdf2221-f076-402e-a563-3d30da359d67"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
@@ -12,6 +13,7 @@ Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
 Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
 Infiltrator = "5903a43b-9cc3-4c30-8d17-598619ec4e9b"
 Integrals = "de52edbc-65ea-441a-8357-d3a637375a31"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
 Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
 Mooncake = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"

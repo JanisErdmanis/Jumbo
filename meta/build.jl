@@ -15,7 +15,7 @@ adhoc_signing = config[:adhoc_signing]
 windowed = false
 
 version = AppBundler.get_version(APP_DIR)
-target_name = "jubox-$version-$(target_arch)"
+target_name = "jumbo-$version-$(target_arch)"
 
 if :linux in target_platforms
     AppBundler.build_app(Linux(target_arch), APP_DIR, "$build_dir/$target_name.snap"; precompile, incremental, windowed)
