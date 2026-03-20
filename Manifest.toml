@@ -2,7 +2,7 @@
 
 julia_version = "1.12.5"
 manifest_format = "2.0"
-project_hash = "8ab5f3fde9bb52e043323283e7534cd807446a00"
+project_hash = "3735103f398dbd220d7510ff734de940f078c29d"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "f7304359109c768cf32dc5fa2d371565bb63b68a"
@@ -157,9 +157,9 @@ version = "0.6.2"
 
 [[deps.AlgebraOfGraphics]]
 deps = ["Accessors", "Colors", "DataAPI", "Dates", "Dictionaries", "FileIO", "GLM", "GeoInterface", "GeometryBasics", "GridLayoutBase", "Isoband", "KernelDensity", "Loess", "Makie", "NaturalSort", "PlotUtils", "PolygonOps", "PooledArrays", "PrecompileTools", "RelocatableFolders", "StatsBase", "StructArrays", "Tables"]
-git-tree-sha1 = "41b570924747cf4b9b463d4ae1af9129948b06ca"
+git-tree-sha1 = "f97855293b04707e1cc848e5ade97ffa473e8795"
 uuid = "cbdf2221-f076-402e-a563-3d30da359d67"
-version = "0.11.10"
+version = "0.12.4"
 weakdeps = ["DynamicQuantities", "Unitful"]
 
     [deps.AlgebraOfGraphics.extensions]
