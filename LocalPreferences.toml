@@ -1,0 +1,9 @@
+[AppBundler]
+app_summary = "Julia Distribution for Science"
+windowed = false
+overwrite_target = true
+selfsign = true
+
+juliaimg_mainless = true
+juliaimg_incremental = true
+juliaimg_precompile = true
