@@ -34,5 +34,7 @@ Infiltrator = "1.9.4"
 Makie = "0.24.6"
 ModelingToolkit = "10.26.1"
 QuantumOptics = "1.2.4"
-Revise = "3.12.1"
 WGLMakie = "0.13.6"
+
+[extras]
+AppBundler = "40eb83ae-c93a-480c-8f39-f018b568f472"

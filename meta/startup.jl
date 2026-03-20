@@ -1,4 +1,4 @@
-# Startup Configuration File (common startup.jl)
+# Startup Configuration File
 #
 # This file runs after platform-specific arguments are set, allowing you to apply
 # common startup options across all environments. Use this file to:
