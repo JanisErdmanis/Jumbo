@@ -17,11 +17,11 @@ weakdeps = ["SparseArrays", "StaticArrays"]
 
 [[deps.AppBundler]]
 deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_jll", "Pkg", "Preferences", "Printf", "PyCall", "Random", "Scratch", "TOML", "Tar", "UUIDs", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "rcodesign_jll", "squashfs_tools_jll"]
-git-tree-sha1 = "9d7aa6cc6c30bddd9b97464aa9f12dfc59c37c97"
-repo-rev = "docs-polish"
-repo-url = "https://github.com/PeaceFounder/AppBundler.jl.git"
+git-tree-sha1 = "598f3e856a88f549d9bee845f009c58dfb3ad027"
+repo-rev = "main"
+repo-url = "https://github.com/PeaceFounder/AppBundler.jl"
 uuid = "40eb83ae-c93a-480c-8f39-f018b568f472"
-version = "0.6.0"
+version = "1.0.0"
 
 [[deps.AppBundlerUtils_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -951,6 +951,6 @@ version = "0.29.0+0"
 
 [[deps.squashfs_tools_jll]]
 deps = ["Artifacts", "JLLWrappers", "LZO_jll", "Libdl", "Lz4_jll", "XZ_jll", "Zlib_jll", "Zstd_jll"]
-git-tree-sha1 = "f97f4b4ce6dda8fb6128cc11f09bd4676c8d4642"
+git-tree-sha1 = "fc5953521f0535f4ea4c51682506dd0456dc56c8"
 uuid = "eed32e3e-a7c5-5bf9-9121-5cf3ab653887"
-version = "4.7.4+0"
+version = "4.7.5+0"
