@@ -1,5 +1,5 @@
 name = "Jumbo"
-version = "26.04.12"
+version = "26.4.12"
 authors = ["Janis Erdmanis <janiserdmanis@protonmail.ch>"]
 
 [deps]
@@ -20,14 +20,13 @@ ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
 Mooncake = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
 Optim = "429524aa-4258-5aef-a3af-852621145aeb"
-QuantumOptics = "6e0679c1-51ea-5a7c-ac74-d61b76210b0c"
+OrdinaryDiffEqCore = "bbf590c4-e513-4bbe-9b18-05decba2e5d8"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
 WGLMakie = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
 
 [compat]
 JSON = "1"
-Mooncake = "0.5"
 Revise = "3.14"
 
 [extras]
