@@ -1,5 +1,5 @@
 name = "Jumbo"
-version = "25.11.18"
+version = "26.04.12"
 authors = ["Janis Erdmanis <janiserdmanis@protonmail.ch>"]
 
 [deps]
