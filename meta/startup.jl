@@ -16,7 +16,9 @@ else
 end
 AppEnv.init()
 
-Base.ACTIVE_PROJECT[] = AppEnv.USER_DATA
+if isnothing(Base.ACTIVE_PROJECT[])
+    Base.ACTIVE_PROJECT[] = AppEnv.USER_DATA
+end
 
 if isinteractive()
     @async begin
