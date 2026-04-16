@@ -24,7 +24,7 @@ julia --project=meta
 
 Once dependencies are installed, perform the build:
 ```bash
-julia --project=meta meta/build.jl --build-dir=build
+julia --project=meta -m AppBundler build . --build-dir=build --selfsign
 ```
 This creates build artifacts in the `build` directory. By default, the bundle targets the host platform. 
 
@@ -34,7 +34,7 @@ Builds can also be performed with GitLab via Build → Pipelines, where they can
 
 You can create bundles for other platforms using command options:
 ```bash
-julia --project=meta meta/build.jl --build-dir=build --target-arch=aarch64 --target-platform=macos --compiled-modules=existing
+julia --project=meta -m AppBundler build . --build-dir=build --target-arch=aarch64 --target-bundle=dmg -Djuliaimg_precompile=false --selfsign
 ```
 
 This creates a bundle for the specified platform where precompilation will occur on the user's system at first launch.
