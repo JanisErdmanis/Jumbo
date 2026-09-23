@@ -4,6 +4,9 @@ windowed = false
 overwrite_target = true
 selfsign = true
 
-juliaimg_mainless = true
-juliaimg_incremental = true
-juliaimg_precompile = true
+msix.bootstrapper = true
+dmg.shallow_signing = true
+
+juliaimg.mainless = true
+juliaimg.incremental = true
+juliaimg.precompile = true
