@@ -17,9 +17,9 @@ weakdeps = ["SparseArrays", "StaticArrays"]
     AdaptStaticArraysExt = "StaticArrays"
 
 [[deps.AppBundler]]
-deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
-git-tree-sha1 = "8b0ed12b5945b7eccc50cf247e8e1b516691e7b9"
-repo-rev = "maintenance-features"
+deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
+git-tree-sha1 = "8536fa0c6e803a9cd01ca9fb456e11c687221bcb"
+repo-rev = "hfs-dmg"
 repo-url = "https://github.com/PeaceFounder/AppBundler.jl.git"
 uuid = "40eb83ae-c93a-480c-8f39-f018b568f472"
 version = "1.0.1"
@@ -110,10 +110,10 @@ version = "0.8.7"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
-git-tree-sha1 = "67e11ee83a43eb71ddc950302c53bf33f0690dfe"
+git-tree-sha1 = "6eaa7ad1a86c07e4917f9e67dca60e98d224a43d"
 registries = "General"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
-version = "0.12.1"
+version = "0.12.2"
 weakdeps = ["StyledStrings"]
 
     [deps.ColorTypes.extensions]
@@ -169,11 +169,24 @@ registries = "General"
 uuid = "150eb455-5306-5404-9cee-2592286d6298"
 version = "0.6.4"
 
+[[deps.Crayons]]
+git-tree-sha1 = "54b76cbb40d9a0f5368c880725b2f141da77c94f"
+registries = "General"
+uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+version = "4.2.0"
+
 [[deps.DataAPI]]
 git-tree-sha1 = "abe83f3a2f1b857aac70ef8b269080af17764bbe"
 registries = "General"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.16.0"
+
+[[deps.DataFrames]]
+deps = ["Compat", "DataAPI", "DataStructures", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
+git-tree-sha1 = "5fab31e2e01e70ad66e3e24c968c264d1cf166d6"
+registries = "General"
+uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+version = "1.8.2"
 
 [[deps.DataStructures]]
 deps = ["OrderedCollections"]
@@ -232,6 +245,11 @@ git-tree-sha1 = "59af96b98217c6ef4ae0dfe065ac7c20831d1a84"
 registries = "General"
 uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
 version = "0.8.6"
+
+[[deps.Future]]
+deps = ["Random"]
+uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
+version = "1.11.0"
 
 [[deps.Giflib_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -301,6 +319,20 @@ registries = "General"
 uuid = "d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9"
 version = "0.1.5"
 
+[[deps.InlineStrings]]
+git-tree-sha1 = "06b65886c7577a3784d616e29f1302c2e36e389d"
+registries = "General"
+uuid = "842dd82b-1e85-43dc-bf29-5d0ee9dffc48"
+version = "1.4.6"
+
+    [deps.InlineStrings.extensions]
+    ArrowTypesExt = "ArrowTypes"
+    ParsersExt = "Parsers"
+
+    [deps.InlineStrings.weakdeps]
+    ArrowTypes = "31f734f8-188a-4ce0-8406-c8a06bd891cd"
+    Parsers = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
+
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -336,6 +368,12 @@ version = "0.7.14"
     Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
     RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
     Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[[deps.InvertedIndices]]
+git-tree-sha1 = "6da3c4316095de0f5ee2ebd875df8721e7e0bdbe"
+registries = "General"
+uuid = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
+version = "1.3.1"
 
 [[deps.IterTools]]
 git-tree-sha1 = "42d5f897009e7ff2cf88db414a389e5ed1bdd023"
@@ -408,6 +446,12 @@ git-tree-sha1 = "1c602b1127f4751facb671441ca72715cc95938a"
 registries = "General"
 uuid = "dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac"
 version = "2.10.3+0"
+
+[[deps.LaTeXStrings]]
+git-tree-sha1 = "f88f3ccef05a6a72a0cf0ed417c8fd68530f4ab2"
+registries = "General"
+uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+version = "1.4.1"
 
 [[deps.LazyModules]]
 git-tree-sha1 = "a560dd966b386ac9ae60bdd3a3d3a326062d3c3e"
@@ -505,6 +549,13 @@ deps = ["Base64", "JuliaSyntaxHighlighting", "StyledStrings"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 version = "1.11.0"
 
+[[deps.Missings]]
+deps = ["DataAPI"]
+git-tree-sha1 = "ec4f7fbeab05d7747bdf98eb74d130a2a2ed298d"
+registries = "General"
+uuid = "e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28"
+version = "1.2.0"
+
 [[deps.Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 version = "1.11.0"
@@ -521,11 +572,11 @@ uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
 version = "2026.8.13"
 
 [[deps.Mustache]]
-deps = ["Printf", "Tables"]
-git-tree-sha1 = "3cbd5dda543bc59f2e482607ccf84b633724fc32"
+deps = ["DataFrames", "Printf", "Tables"]
+git-tree-sha1 = "7437c911e62f50e7a043a774ebdc0dbd780d9fe5"
 registries = "General"
 uuid = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
-version = "1.0.21"
+version = "1.1.0"
 
 [[deps.Ncurses_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -634,6 +685,13 @@ registries = "General"
 uuid = "eebad327-c553-4316-9ea0-9fa01ccd7688"
 version = "0.3.3"
 
+[[deps.PooledArrays]]
+deps = ["DataAPI", "Future"]
+git-tree-sha1 = "36d8b4b899628fb92c2749eb488d884a926614d3"
+registries = "General"
+uuid = "2dfb63ee-cc39-5dd5-95bd-886bf059d720"
+version = "1.4.3"
+
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
 git-tree-sha1 = "edbeefc7a4889f528644251bdb5fc9ab5348bc2c"
@@ -647,6 +705,21 @@ git-tree-sha1 = "5005266de4bfe50e53ff44a5cb5c540b6e47a254"
 registries = "General"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
 version = "1.6.0"
+
+[[deps.PrettyTables]]
+deps = ["Crayons", "LaTeXStrings", "Markdown", "PrecompileTools", "Printf", "REPL", "Reexport", "StringManipulation", "Tables"]
+git-tree-sha1 = "1b8aa19f229b1cea7fc93874a52e49db6a854450"
+registries = "General"
+uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+version = "3.4.8"
+
+    [deps.PrettyTables.extensions]
+    PrettyTablesExcelExt = "XLSX"
+    PrettyTablesTypstryExt = "Typstry"
+
+    [deps.PrettyTables.weakdeps]
+    Typstry = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+    XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 
 [[deps.Printf]]
 deps = ["Unicode"]
@@ -766,6 +839,13 @@ registries = "General"
 uuid = "6c6a2e73-6563-6170-7368-637461726353"
 version = "1.3.0"
 
+[[deps.SentinelArrays]]
+deps = ["Dates", "Random"]
+git-tree-sha1 = "084c47c7c5ce5cfecefa0a98dff69eb3646b5a80"
+registries = "General"
+uuid = "91c51154-3ec4-41a3-a24f-3f23e20d615c"
+version = "1.4.10"
+
 [[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 version = "1.11.0"
@@ -792,6 +872,13 @@ version = "0.1.5"
 [[deps.Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
 version = "1.11.0"
+
+[[deps.SortingAlgorithms]]
+deps = ["DataStructures"]
+git-tree-sha1 = "13cd91cc9be159e3f4d95b857fa2aa383b53772a"
+registries = "General"
+uuid = "a2af1166-a08f-5f64-846c-94a0d3cef48c"
+version = "1.2.3"
 
 [[deps.SparseArrays]]
 deps = ["Libdl", "LinearAlgebra", "Random", "Serialization", "SuiteSparse_jll"]
@@ -833,6 +920,13 @@ weakdeps = ["SparseArrays"]
 
     [deps.Statistics.extensions]
     SparseArraysExt = ["SparseArrays"]
+
+[[deps.StringManipulation]]
+deps = ["PrecompileTools"]
+git-tree-sha1 = "773065c6e0e903924a9d838259be74338422aef2"
+registries = "General"
+uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
+version = "0.5.0"
 
 [[deps.StructUtils]]
 deps = ["Dates", "UUIDs"]
