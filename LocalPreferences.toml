@@ -7,6 +7,7 @@ selfsign = true
 msix.bootstrapper = true
 dmg.shallow_signing = true
 dmg.backend = "hfsplus"
+dmg.hfsplus.slack = 0.98
 
 juliaimg.mainless = true
 juliaimg.incremental = true
