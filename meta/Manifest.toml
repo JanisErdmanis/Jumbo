@@ -1,8 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.13.0"
+julia_version = "1.13.1"
 manifest_format = "2.1"
-project_hash = "6f9b47004073e0faf5fb1f9f7e6b7bc9facaf5bf"
+project_hash = "0c656f674537f32d5825785b8ca549e648464cbc"
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra"]
@@ -17,8 +17,10 @@ weakdeps = ["SparseArrays", "StaticArrays"]
     AdaptStaticArraysExt = "StaticArrays"
 
 [[deps.AppBundler]]
-deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "hfsprogs_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
-path = "../../../PeaceFounder/Github/AppBundler"
+deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
+git-tree-sha1 = "5739c3819479c05ec6bf65cd0a6008469c60536b"
+repo-rev = "hfs-dmg"
+repo-url = "https://github.com/PeaceFounder/AppBundler.jl"
 uuid = "40eb83ae-c93a-480c-8f39-f018b568f472"
 version = "1.0.1"
 
@@ -108,10 +110,10 @@ version = "0.8.7"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
-git-tree-sha1 = "6eaa7ad1a86c07e4917f9e67dca60e98d224a43d"
+git-tree-sha1 = "61761f58648aa7217445f24f841839b78c712232"
 registries = "General"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
-version = "0.12.2"
+version = "0.12.3"
 weakdeps = ["StyledStrings"]
 
     [deps.ColorTypes.extensions]
@@ -131,11 +133,11 @@ version = "0.11.0"
     SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
 
 [[deps.Colors]]
-deps = ["ColorTypes", "FixedPointNumbers", "Reexport"]
-git-tree-sha1 = "37ea44092930b1811e666c3bc38065d7d87fcc74"
+deps = ["ColorTypes", "FixedPointNumbers", "LinearAlgebra", "Reexport"]
+git-tree-sha1 = "291665b547f137df070e4dd83e432b5fee8cc4a0"
 registries = "General"
 uuid = "5ae59095-9a9b-59fe-a467-6f913c188581"
-version = "0.13.1"
+version = "0.13.2"
 
 [[deps.Compat]]
 deps = ["TOML", "UUIDs"]
@@ -480,7 +482,7 @@ version = "1.9.1+0"
 [[deps.LibSSH2_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl", "OpenSSL_jll", "Zlib_jll"]
 uuid = "29816b5a-b9ab-546f-933c-edad1886dfa8"
-version = "1.11.103+0"
+version = "1.11.104+0"
 
 [[deps.Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
@@ -1113,12 +1115,6 @@ git-tree-sha1 = "7023fe614fdb8ee43a5458954ea897ada0fb9286"
 registries = "General"
 uuid = "d65627f6-89bd-53e8-8ab5-8b75ff535eee"
 version = "1.2.9+0"
-
-[[deps.hfsprogs_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll"]
-path = "../../../../.julia/dev/hfsprogs_jll"
-uuid = "2713a798-1afa-549a-8396-c254ecd2a288"
-version = "540.1.3+0"
 
 [[deps.libblastrampoline_jll]]
 deps = ["Artifacts", "Libdl"]
