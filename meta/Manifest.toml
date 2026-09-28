@@ -2,7 +2,7 @@
 
 julia_version = "1.13.1"
 manifest_format = "2.1"
-project_hash = "0c656f674537f32d5825785b8ca549e648464cbc"
+project_hash = "6f9b47004073e0faf5fb1f9f7e6b7bc9facaf5bf"
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra"]
@@ -18,11 +18,10 @@ weakdeps = ["SparseArrays", "StaticArrays"]
 
 [[deps.AppBundler]]
 deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
-git-tree-sha1 = "5739c3819479c05ec6bf65cd0a6008469c60536b"
-repo-rev = "hfs-dmg"
-repo-url = "https://github.com/PeaceFounder/AppBundler.jl"
+git-tree-sha1 = "06fabbe8de65a02d98bf7e319e34f821d350215e"
+registries = "General"
 uuid = "40eb83ae-c93a-480c-8f39-f018b568f472"
-version = "1.0.1"
+version = "1.1.0"
 
 [[deps.AppBundlerUtils_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -396,10 +395,10 @@ version = "1.8.0"
 
 [[deps.JSON]]
 deps = ["Dates", "Logging", "Parsers", "PrecompileTools", "StructUtils", "UUIDs", "Unicode"]
-git-tree-sha1 = "633b5a34494e711f694ccbc88a6e00102f10238c"
+git-tree-sha1 = "4657a834b01ce00f2b94546095c4350617b9af2c"
 registries = "General"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
-version = "1.9.0"
+version = "1.10.0"
 
     [deps.JSON.extensions]
     JSONArrowExt = ["ArrowTypes"]
@@ -707,18 +706,20 @@ uuid = "21216c6a-2e73-6563-6e65-726566657250"
 version = "1.6.0"
 
 [[deps.PrettyTables]]
-deps = ["Crayons", "LaTeXStrings", "Markdown", "PrecompileTools", "Printf", "REPL", "Reexport", "StringManipulation", "Tables"]
-git-tree-sha1 = "1b8aa19f229b1cea7fc93874a52e49db6a854450"
+deps = ["Crayons", "LaTeXStrings", "Markdown", "PrecompileTools", "Printf", "REPL", "Reexport", "StringManipulation", "StyledStrings", "Tables"]
+git-tree-sha1 = "99fd8f32ab6728ff205cddd24e2d9ea6cbb498d3"
 registries = "General"
 uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
-version = "3.4.8"
+version = "3.5.0"
 
     [deps.PrettyTables.extensions]
     PrettyTablesExcelExt = "XLSX"
     PrettyTablesTypstryExt = "Typstry"
+    PrettyTablesWriteDocxExt = "WriteDocx"
 
     [deps.PrettyTables.weakdeps]
     Typstry = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+    WriteDocx = "d049ceea-54ee-41d7-a26f-ba29db3b6599"
     XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 
 [[deps.Printf]]
@@ -922,11 +923,11 @@ weakdeps = ["SparseArrays"]
     SparseArraysExt = ["SparseArrays"]
 
 [[deps.StringManipulation]]
-deps = ["PrecompileTools"]
-git-tree-sha1 = "773065c6e0e903924a9d838259be74338422aef2"
+deps = ["PrecompileTools", "StyledStrings"]
+git-tree-sha1 = "9e3a02d73a8f0a9be04e677dbef758aab40f8bea"
 registries = "General"
 uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
-version = "0.5.0"
+version = "0.6.1"
 
 [[deps.StructUtils]]
 deps = ["Dates", "UUIDs"]
