@@ -17,10 +17,8 @@ weakdeps = ["SparseArrays", "StaticArrays"]
     AdaptStaticArraysExt = "StaticArrays"
 
 [[deps.AppBundler]]
-deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
-git-tree-sha1 = "8536fa0c6e803a9cd01ca9fb456e11c687221bcb"
-repo-rev = "hfs-dmg"
-repo-url = "https://github.com/PeaceFounder/AppBundler.jl.git"
+deps = ["AppBundlerUtils_jll", "AppEnv", "Artifacts", "Base64", "CodecZlib", "Conda", "Dates", "Downloads", "FileIO", "ImageCore", "ImageIO", "ImageTransformations", "LibGit2", "Libdl", "Makemsix_jll", "Mustache", "OpenSSL_CLI_jll", "Pkg", "Printf", "PyCall", "Random", "SHA", "Scratch", "TOML", "Tar", "UUIDs", "Unicode", "Xorriso_jll", "hfsprogs_jll", "libdmg_hfsplus_jll", "osslsigncode_jll", "p7zip_jll", "rcodesign_jll", "squashfs_tools_jll"]
+path = "../../../PeaceFounder/Github/AppBundler"
 uuid = "40eb83ae-c93a-480c-8f39-f018b568f472"
 version = "1.0.1"
 
@@ -1115,6 +1113,12 @@ git-tree-sha1 = "7023fe614fdb8ee43a5458954ea897ada0fb9286"
 registries = "General"
 uuid = "d65627f6-89bd-53e8-8ab5-8b75ff535eee"
 version = "1.2.9+0"
+
+[[deps.hfsprogs_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll"]
+path = "../../../../.julia/dev/hfsprogs_jll"
+uuid = "2713a798-1afa-549a-8396-c254ecd2a288"
+version = "540.1.3+0"
 
 [[deps.libblastrampoline_jll]]
 deps = ["Artifacts", "Libdl"]
